@@ -1,0 +1,16 @@
+/**
+ * Load Emacs bindings.
+ */
+
+print ("in emacs_bindings.bsh");
+
+settings = jEdit.getSettingsDirectory();
+fileSep = System.getProperty ("file.separator");
+source (settings +
+        fileSep +
+        "macros" +
+        fileSep +
+        "Emacs" +
+        fileSep +
+        "Emacs_Set_Keybindings.bsh");
+emacsSetKeybindings();

@@ -1,5 +1,8 @@
 /**
- * Load Emacs bindings.
+ * Load Emacs bindings. You must copy this file to your
+ * ${user.home}/.jedit/startup directory
+ *
+ * $Id$
  */
 
 print ("in emacs_bindings.bsh");

@@ -1,0 +1,14 @@
+$Id$
+
+To install:
+
+1. Copy the contents of the startup directory to your .jedit/startup
+   directory (typically under your home directory).
+
+2. Create a .jedit/macros/Emacs directory.
+
+3. Copy the contents of this directory (i.e., the "bsh" files and
+   the shortcut.properties file) to the directory you created in step 2.
+
+4. Fire up JEdit. It should find the Emacs macros and automatically create
+   keybindings based on the contents of the shortcut.properties file.

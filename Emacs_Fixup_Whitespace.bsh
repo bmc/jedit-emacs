@@ -5,7 +5,7 @@
  *     Fixup white space between objects around caret.
  *     Leave one space or none, according to the context.
  *
- * $Id: Emacs_Fixup_Whitespace.bsh,v 1.1 2005/08/30 21:25:42 bmc Exp $
+ * $Id$
  */
 
 source (dirname (scriptPath) +

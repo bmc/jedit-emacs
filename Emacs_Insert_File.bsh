@@ -2,7 +2,7 @@
  * Insert the contents of a file at the caret. Emulates the Emacs
  * "insert-file" command (normally bound to "Ctrl-X i").
  *
- * $Id: Emacs_Insert_File.bsh,v 1.2 2005/08/31 16:51:29 bmc Exp $
+ * $Id$
  */
 source (dirname (scriptPath) +
         System.getProperty ("file.separator") +

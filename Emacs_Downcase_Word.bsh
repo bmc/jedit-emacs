@@ -3,7 +3,7 @@
  * caret and moving to the end of the word. Emulates the Emacs "downcase-word"
  * function.
  *
- * $Id: Emacs_Downcase_Word.bsh,v 1.1 2005/08/30 21:25:42 bmc Exp $
+ * $Id$
  */
 
 source (dirname (scriptPath) +

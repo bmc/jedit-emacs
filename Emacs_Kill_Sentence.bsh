@@ -2,7 +2,7 @@
  * Kill to the end of the current sentence. Emulates the Emacs "kill-sentence"
  * command.
  *
- * $Id: Emacs_Kill_Sentence.bsh,v 1.2 2005/08/31 18:27:37 bmc Exp $
+ * $Id$
  */
 
 source (dirname (scriptPath) +

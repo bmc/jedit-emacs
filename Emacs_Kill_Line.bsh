@@ -1,7 +1,7 @@
 /**
  * Emulate GNU Emacs's (kill-line) function (typically bound to Ctrl-K)
  *
- * $Id: Emacs_Kill_Line.bsh,v 1.4 2005/08/31 18:27:01 bmc Exp $
+ * $Id$
  */
 
 source (dirname (scriptPath) +

@@ -2,7 +2,7 @@
  * Go to the end of the current sentence. Emulates the Emacs "forward-sentence"
  * command.
  *
- * $Id: Emacs_Backward_Sentence.bsh,v 1.1 2005/08/31 04:36:40 bmc Exp $
+ * $Id$
  */
 
 source (dirname (scriptPath) +

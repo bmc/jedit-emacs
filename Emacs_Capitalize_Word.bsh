@@ -3,7 +3,7 @@
  * caret and moving to the end of the word. Emulates the Emacs "capitalize-word"
  * function.
  *
- * $Id: Emacs_Capitalize_Word.bsh,v 1.3 2005/08/31 04:36:30 bmc Exp $
+ * $Id$
  */
 
 source (dirname (scriptPath) +

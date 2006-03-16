@@ -1,7 +1,7 @@
 /**
 * Utility methods for Emacs emulation macros.
 *
-* $Id: EmacsUtil.bsh,v 1.6 2005/08/31 18:27:33 bmc Exp $
+* $Id$
 */
 
 import org.gjt.sp.jedit.Registers;

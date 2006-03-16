@@ -3,7 +3,7 @@
  * in a file called "shortcuts.properties" in the macros directory. This
  * macro can be invoked in the startup script.
  *
- * $Id: Emacs_Set_Keybindings.bsh,v 1.8 2005/08/31 17:28:15 bmc Exp $
+ * $Id$
  */
 
 void emacsSetKeybindings()

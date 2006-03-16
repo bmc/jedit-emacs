@@ -1,0 +1,22 @@
+/**
+ * Insert a newline after the caret, without moving the caret. This macro
+ * corresponds to the Emacs (open-line) capability.
+ *
+ * $Id: Emacs_Open_Line.bsh,v 1.2 2005/08/31 16:51:29 bmc Exp $
+ */
+source (dirname (scriptPath) +
+        System.getProperty ("file.separator") +
+        "EmacsUtil.bsh");
+
+void emacsOpenLine()
+{
+    caret = textArea.getCaretPosition();
+    buffer.insert (caret, "\n");
+    // Caret moved. Back it up.
+    textArea.goToPrevLine (false);
+    textArea.goToEndOfLine (false);
+}
+
+emacsOpenLine();
+
+

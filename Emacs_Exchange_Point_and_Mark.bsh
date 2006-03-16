@@ -1,0 +1,25 @@
+/**
+ * Emulate GNU Emacs's "exchange-point-and-mark" capability.
+ * Does NOT use jEdit markers.
+ *
+ * $Id: Emacs_Exchange_Point_and_Mark.bsh,v 1.2 2005/08/31 15:57:45 bmc Exp $
+ */
+source (dirname (scriptPath) +
+        System.getProperty ("file.separator") +
+        "EmacsUtil.bsh");
+
+void emacsExchangePointAndMark()
+{
+    int mark = getMark (buffer);
+    if (mark == -1)
+    {
+        beep();
+        return;
+    }
+    int point = textArea.getCaretPosition();
+    setMark (buffer, point);
+    textArea.setCaretPosition (mark);
+}
+
+emacsExchangePointAndMark();
+

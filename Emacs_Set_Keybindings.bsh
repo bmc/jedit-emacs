@@ -1,0 +1,61 @@
+/**
+ * Initialize Emacs key bindings. Assumes the key bindings are defined
+ * in a file called "shortcuts.properties" in the macros directory. This
+ * macro can be invoked in the startup script.
+ *
+ * $Id: Emacs_Set_Keybindings.bsh,v 1.8 2005/08/31 17:28:15 bmc Exp $
+ */
+
+void emacsSetKeybindings()
+{
+    if (jEdit.getBooleanProperty ("emacs.loadedKeyBindings") == true)
+        return;
+
+    fileSep = System.getProperty ("file.separator");
+    File shortcutsFile = new File (jEdit.getSettingsDirectory() +
+                                   fileSep +
+                                   "macros" +
+                                   fileSep +
+                                   "Emacs" +
+                                   fileSep +
+                                   "shortcuts.properties");
+    if (! shortcutsFile.exists())
+    {
+        print ("Can't load Emacs key bindings. File \"" +
+               shortcutsFile.getPath() +
+               "\" does not exist.");
+        return;
+    }
+
+    try
+    {
+        print ("Loading Emacs key bindings from \"" +
+               shortcutsFile.getPath() +
+               "\"");
+
+        InputStream is = new FileInputStream (shortcutsFile);
+        Properties shortcuts = new Properties();
+        shortcuts.load (is);
+
+        Properties existingProperties = jEdit.getProperties();
+
+        for (Enumeration e = shortcuts.propertyNames(); e.hasMoreElements();)
+        {
+            String propertyName = e.nextElement();
+            String keyBinding = shortcuts.getProperty (propertyName);
+            jEdit.setProperty (propertyName, keyBinding);
+        }
+        
+        jEdit.setProperty ("emacs.loadedKeyBindings", "true");
+        jEdit.propertiesChanged();
+    }
+
+    catch (IOException ex)
+    {
+        print (ex.toString());
+    }
+}
+
+emacsSetKeybindings();
+
+

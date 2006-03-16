@@ -1,0 +1,50 @@
+/**
+ * Transpose line at caret with previous line, and move caret to next line.
+ *  Emulates Emacs "transpose-lines" command (without prefix argument support).
+ *
+ * $Id: Emacs_Transpose_Lines.bsh,v 1.1 2005/08/31 02:45:45 bmc Exp $
+ */
+
+source (dirname (scriptPath) +
+        System.getProperty ("file.separator") +
+        "EmacsUtil.bsh");
+
+void emacsTransposeLines()
+{
+    caret = textArea.getCaretPosition();
+    if ((caret == 0) || atEndOfBuffer())
+    {
+        beep();
+        return;
+    }
+
+    caretLine = textArea.getCaretLine();
+    lineStart = textArea.getLineStartOffset (caretLine);
+    lineEnd = textArea.getLineEndOffset (caretLine);
+    lineIndex = textArea.getLineOfOffset (caretLine);
+
+    selection = new Selection.Range (lineStart, lineEnd);
+    line = textArea.getSelectedText(selection);
+    print (line);
+
+    // Get the location of the previous line
+
+    textArea.goToPrevLine (false);
+    prevLineCaret = textArea.getCaretLine();
+    prevLineStart = textArea.getLineStartOffset (prevLineCaret);
+
+    // Go back to the original location.
+    
+    textArea.setCaretPosition (caret);
+    
+    // Delete the line
+    
+    textArea.deleteLine();
+    
+    // Insert it in the new location.
+
+    buffer.insert (prevLineStart, line);
+}
+
+emacsTransposeLines();
+

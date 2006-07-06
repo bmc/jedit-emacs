@@ -1,9 +1,11 @@
 $Id$
 
-This directory contains a series of BeanShell macros for use with the jEdit
-Programmer's Editor (http://www.jedit.org/). These macros, and the
-accompanying "shortcuts.properties" file, emulate various editor
-capabilities available in the popular GNU Emacs editor.
+This directory contains a set of key bindings and some BeanShell macros for
+the popular jEdit editor. The key bindings and macros, together, attempt to
+provide a better emulation of the GNU Emacs editor than is available out of
+the box with jEdit. Some of the key bindings in the shortcuts file merely
+bind to existing jEdit macros; however, others bind to macros provided by
+this package.
 
 To install, see the "INSTALL" file.
 
@@ -13,9 +15,9 @@ enhancements and bug fixes to me at this address:
 
                  bmc /at/ clapper.org
 
-NOTICE: This emulation software is not part of, or endorsed by, the GNU
-Emacs project or the Free Software Foundation, nor it is official endorsed
-by or a part of the jEdit project.
+NOTICE: This emulation software is not part of, or endorsed by, the GNU Emacs
+project or the Free Software Foundation, nor is it a part of, or endorsed by,
+the jEdit project.
 
 ---------------------------------------------------------------------------
 Copyright (c) 2005-2006 Brian M. Clapper

@@ -1,6 +1,6 @@
 /**
- * Go to the end of the current sentence. Emulates the Emacs "forward-sentence"
- * command.
+ * Go to the beginning of the current sentence. Emulates the Emacs
+ * "backward-sentence" command.
  *
  * $Id$
  */

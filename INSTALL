@@ -12,3 +12,10 @@ To install:
 
 4. Fire up JEdit. It should find the Emacs macros and automatically create
    keybindings based on the contents of the shortcut.properties file.
+
+---------------------------------------------------------------------------
+Copyright (c) 2005-2006 Brian M. Clapper
+
+Released under a BSD-style license. See the "LICENSE" file that accompanies
+the software distribution for details.
+---------------------------------------------------------------------------

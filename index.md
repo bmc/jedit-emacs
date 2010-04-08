@@ -37,7 +37,7 @@ To install the macros:
    
 2. Create a `.jedit/macros/Emacs` directory.
 
-3. Copy the Bean Shell (*.bsh) files in `jedit-emacs` to your newly created
+3. Copy the Bean Shell (\*.bsh) files in `jedit-emacs` to your newly created
    `.jedit/macros/Emacs` directory.
    
 4. Copy the `shortcut.properties` file to `.jedit/macros/Emacs`.
@@ -56,7 +56,7 @@ released under a BSD license.
 Emacs project or the Free Software Foundation, nor is it a part of, or
 endorsed by, the jEdit project.
 
-
+[jEdit]: http://jedit.org/
 [downloads page]: http://github.com/bmc/jedit-emacs/downloads
 [GitHub repository]: http://github.com/bmc/jedit-emacs
 [Brian M. Clapper]: mailto:bmc@clapper.org

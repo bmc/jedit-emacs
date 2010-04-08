@@ -1,7 +1,5 @@
 /**
  * Emulate GNU Emacs's (kill-line) function (typically bound to Ctrl-K)
- *
- * $Id$
  */
 
 source (dirname (scriptPath) +

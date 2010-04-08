@@ -2,8 +2,6 @@
  * Transpose character at caret with previous character, and move caret
  * forward one. Emulates Emacs "transpose-chars" command (without prefix
  * argument support).
- *
- * $Id$
  */
 
 source (dirname (scriptPath) +

@@ -1,8 +1,6 @@
 /**
  * Go to the beginning of the current sentence. Emulates the Emacs
  * "backward-sentence" command.
- *
- * $Id$
  */
 
 source (dirname (scriptPath) +

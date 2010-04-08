@@ -34,7 +34,6 @@ void emacsCenterLine()
     
     fillColumn = getCardinalProperty (propName, defaultFillColumn);
 
-    print (propName.toString() + "=" + fillColumn);
     if ((! atEndOfBuffer()) && (lineStart < lineEnd))
     {
         // Be sure to ignore trailing newline.

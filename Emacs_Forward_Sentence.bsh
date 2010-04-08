@@ -1,8 +1,6 @@
 /**
  * Go to the end of the current sentence. Emulates the Emacs "forward-sentence"
  * command.
- *
- * $Id$
  */
 
 source (dirname (scriptPath) +

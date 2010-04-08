@@ -1,8 +1,6 @@
 /**
  * Insert a newline after the caret, without moving the caret. This macro
  * corresponds to the Emacs (open-line) capability.
- *
- * $Id$
  */
 source (dirname (scriptPath) +
         System.getProperty ("file.separator") +

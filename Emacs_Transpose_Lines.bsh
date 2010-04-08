@@ -1,8 +1,6 @@
 /**
  * Transpose line at caret with previous line, and move caret to next line.
  *  Emulates Emacs "transpose-lines" command (without prefix argument support).
- *
- * $Id$
  */
 
 source (dirname (scriptPath) +
@@ -25,7 +23,6 @@ void emacsTransposeLines()
 
     selection = new Selection.Range (lineStart, lineEnd);
     line = textArea.getSelectedText(selection);
-    print (line);
 
     // Get the location of the previous line
 

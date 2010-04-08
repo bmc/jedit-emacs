@@ -1,7 +1,5 @@
 /**
 * Utility methods for Emacs emulation macros.
-*
-* $Id$
 */
 
 import org.gjt.sp.jedit.Registers;

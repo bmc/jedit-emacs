@@ -2,8 +2,6 @@
  * Initialize Emacs key bindings. Assumes the key bindings are defined
  * in a file called "shortcuts.properties" in the macros directory. This
  * macro can be invoked in the startup script.
- *
- * $Id$
  */
 
 void emacsSetKeybindings()
@@ -21,18 +19,11 @@ void emacsSetKeybindings()
                                    "shortcuts.properties");
     if (! shortcutsFile.exists())
     {
-        print ("Can't load Emacs key bindings. File \"" +
-               shortcutsFile.getPath() +
-               "\" does not exist.");
         return;
     }
 
     try
     {
-        print ("Loading Emacs key bindings from \"" +
-               shortcutsFile.getPath() +
-               "\"");
-
         InputStream is = new FileInputStream (shortcutsFile);
         Properties shortcuts = new Properties();
         shortcuts.load (is);

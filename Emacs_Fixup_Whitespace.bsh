@@ -4,8 +4,6 @@
  *
  *     Fixup white space between objects around caret.
  *     Leave one space or none, according to the context.
- *
- * $Id$
  */
 
 source (dirname (scriptPath) +

@@ -2,8 +2,6 @@
  * Convert the portion of the current word to title case, starting at the
  * caret and moving to the end of the word. Emulates the Emacs "capitalize-word"
  * function.
- *
- * $Id$
  */
 
 source (dirname (scriptPath) +

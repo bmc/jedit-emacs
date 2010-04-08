@@ -1,8 +1,6 @@
 /**
  * Kill to the end of the current sentence. Emulates the Emacs "kill-sentence"
  * command.
- *
- * $Id$
  */
 
 source (dirname (scriptPath) +

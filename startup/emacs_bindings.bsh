@@ -1,11 +1,7 @@
 /**
  * Load Emacs bindings. You must copy this file to your
  * ${user.home}/.jedit/startup directory
- *
- * $Id$
  */
-
-print ("in emacs_bindings.bsh");
 
 settings = jEdit.getSettingsDirectory();
 fileSep = System.getProperty ("file.separator");

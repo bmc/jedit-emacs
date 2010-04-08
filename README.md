@@ -14,7 +14,7 @@ For more information, see the accompanying [web site][].
 
 ## Copyright and License
 
-These macros are copyright &copy; 2005-2010 [Brian M. Clapper][] and are
+These macros are copyright &copy; 2005-2010 Brian M. Clapper and are
 released under a BSD license.
 
 ## Notes

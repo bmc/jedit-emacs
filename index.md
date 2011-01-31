@@ -19,7 +19,7 @@ different ways to get this package of macros.
 
 ### Downloading a Tarball or Zip File
 
-Prebuilt tar and zip files are available from the [downloads page][].
+Prebuilt zip files are available from the [downloads page][].
 
 ### Cloning the Git Repository
 
@@ -45,9 +45,15 @@ To install the macros:
 5. Fire up jEdit. It should find the Emacs macros and automatically create
    keybindings based on the contents of `shortcut.properties`.
 
+If you want to have jEdit search an alternate location for the macros
+(it'll still look in `$HOME/.jedit/startup` for the startup file), set the
+`JEDIT_SETTINGS_DIR` to the alternate directory. That directory must
+contain a `macros` subdirectory, and the Emacs emulation (\*.bsh) files
+must be in that alternate `macros` subdirectory.
+
 ## Copyright and License
 
-These macros are copyright &copy; 2005-2010 [Brian M. Clapper][] and are
+These macros are copyright &copy; 2005-2011 [Brian M. Clapper][] and are
 released under a BSD license.
 
 ## Notes

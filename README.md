@@ -14,7 +14,7 @@ For more information, see the accompanying [web site][].
 
 ## Copyright and License
 
-These macros are copyright &copy; 2005-2010 Brian M. Clapper and are
+These macros are copyright &copy; 2005-2011 Brian M. Clapper and are
 released under a BSD license.
 
 ## Notes
@@ -24,4 +24,4 @@ Emacs project or the Free Software Foundation, nor is it a part of, or
 endorsed by, the jEdit project.
 
 [jEdit]: http://jedit.org/
-[web site]: http://bmc.github.com/jedit-emacs/
+[web site]: http://software.clapper.org/jedit-emacs/

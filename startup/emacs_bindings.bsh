@@ -3,7 +3,22 @@
  * ${user.home}/.jedit/startup directory
  */
 
-settings = jEdit.getSettingsDirectory();
+jedit_settings_dir = System.getenv("JEDIT_SETTINGS_DIR");
+if (jedit_settings_dir == null)
+{
+    settings = jEdit.getSettingsDirectory();
+}
+else if (! new java.io.File(jedit_settings_dir).exists())
+{
+    settings = jEdit.getSettingsDirectory();
+    System.err.println("JEDIT_SETTINGS_DIR \"" + jedit_settings_dir +
+                       "\" does not exist. Using \"" + settings + "\".");
+}
+else
+{
+    settings = jedit_settings_dir;
+}
+
 fileSep = System.getProperty ("file.separator");
 source (settings +
         fileSep +

@@ -10,7 +10,7 @@ void emacsSetKeybindings()
         return;
 
     fileSep = System.getProperty ("file.separator");
-    File shortcutsFile = new File (jEdit.getSettingsDirectory() +
+    File shortcutsFile = new File (settings +
                                    fileSep +
                                    "macros" +
                                    fileSep +
